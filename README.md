@@ -13,10 +13,10 @@ Where:
 a = your yearly gross salary.  
 b = your partner's yearly gross salary. 
 
-`(x * y)` = your percentage of the monthly expenses.  
-`(z * y)` = your partner's percentage of the monthly expenses.
+`(x * z)` = your percentage of the monthly expenses.  
+`(z * z)` = your partner's percentage of the monthly expenses.
 
 Where:  
 x = your_percentage_of_household_income.  
-y = total_monthly_household_expenses.  
-z = your_partners_percentage_of_household_income.  
+y = your_partners_percentage_of_household_income.
+z = total_monthly_household_expenses.  
