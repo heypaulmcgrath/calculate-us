@@ -1,2 +1,43 @@
-<h1>hello!</h1>
-<script type="text/javascript" src="calculator.js"></script>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" type="text/css" href="tachyons.min.css">
+    <script type="text/javascript" src="calculator.js"></script>
+</head>
+
+<body>
+    <form class="pa4 black-80">
+        <div class="measure">
+            <label for="name" class="f6 b db mb2">Your yearly pre-tax income.
+            </label>
+            <input id="a" class="input-reset ba b--black-20 pa2 mb4 db w-100" type="text" aria-describedby="name-desc">
+        </div>
+        <div class="measure">
+            <label for="name" class="f6 b db mb2">Your partner's yearly pre-tax income.
+            </label>
+            <input id="b" class="input-reset ba b--black-20 pa2 mb4 db w-100" type="text" aria-describedby="name-desc">
+        </div>
+        <div class="measure">
+            <label for="name" class="f6 b db mb2">Your total monthly household expenses.
+            </label>
+            <input id="z" class="input-reset ba b--black-20 pa2 mb4 db w-100" type="text" aria-describedby="name-desc">
+        </div>
+        <div class="f6 link b black-80 dim ba ph3 pv2 mb2 dib b--black-20 pointer" onClick="calculate()">Calculate</div>
+    </form>
+
+    <section id="result" style="visibility:hidden" class="mw7 ml4-ns ph3 ph5-ns tc br2 pv5 bg-washed-green dark-green mb5">
+        <h1 class="ml3 ml0-ns fw6 f3 tl f2-ns lh-title mt0 mb3">
+            Contributions this month:
+        </h1>
+        <h2 id="you" class="ml3 ml0-ns fw2 tl f4 lh-copy mt0 mb3">
+        </h2>
+        <h2 id="yourPartner" class="ml3 ml0-ns fw2 tl f4 lh-copy mt0 mb3">
+        </h2>
+    </section>
+
+</body>
+
+</html>
