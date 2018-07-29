@@ -15,6 +15,7 @@ Formulas are as follows, and based on yearly gross (pre-tax) income:
 `(z * z)` = your partner's share of the monthly expenses.
 
 Where:  
+
 a = your yearly gross salary.  
 b = your partner's yearly gross salary. 
 
