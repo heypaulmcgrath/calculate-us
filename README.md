@@ -11,13 +11,13 @@ Formulas are as follows, and based on yearly gross (pre-tax) income:
 `(a / (a + b))` = your contribution to household income per year as a percentage.  
 `(b / (a + b))` = your partner's contribution to household income per year as a percentage.
 
-`(x * z)` = your percentage of the monthly expenses.  
-`(z * z)` = your partner's percentage of the monthly expenses.
+`(x * z)` = your share of the monthly expenses.  
+`(z * z)` = your partner's share of the monthly expenses.
 
 Where:  
 a = your yearly gross salary.  
 b = your partner's yearly gross salary. 
 
-x = your_percentage_of_household_income.  
-y = your_partners_percentage_of_household_income.
-z = total_monthly_household_expenses.  
+x = Your percentage of household income.  
+y = Your partners percentage of household income.
+z = Total monthly household expenses.  
