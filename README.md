@@ -19,5 +19,5 @@ a = your yearly gross salary.
 b = your partner's yearly gross salary. 
 
 x = Your percentage of household income.  
-y = Your partners percentage of household income.
+y = Your partners percentage of household income.  
 z = Total monthly household expenses.  
