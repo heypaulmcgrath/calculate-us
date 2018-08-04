@@ -1,23 +1,19 @@
 "use strict";
 
-const toInt = (x) => {
-    return parseInt(x, 10);
-};
-
-const toFloat = (x) => {
-    return parseFloat(x).toFixed(2);
+const toTwoPlaces = (x) => {
+    return Math.round( x * 1e2 ) / 1e2;
 }
 
 function calculate() {
-    const a = toInt(document.getElementById("a").value);
-    const b = toInt(document.getElementById("b").value);
-    const z = toInt(document.getElementById("z").value);
+    const a = toTwoPlaces(document.getElementById("a").value);
+    const b = toTwoPlaces(document.getElementById("b").value);
+    const z = toTwoPlaces(document.getElementById("z").value);
 
-    const x = (a / (a + b));
-    const y = (b / (a + b));
+    const x = toTwoPlaces((a / (a + b)));
+    const y = toTwoPlaces((b / (a + b)));
 
-    const yourExpenses = toFloat((x * z));
-    const partnerExpenses = toFloat((y * z));
+    const yourExpenses = toTwoPlaces((x * z));
+    const partnerExpenses = toTwoPlaces((y * z));
 
     document.getElementById("result").style.visibility = "visible";
     document.getElementById("you").innerHTML = "You: " + yourExpenses;
