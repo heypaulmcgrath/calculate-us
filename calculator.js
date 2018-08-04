@@ -9,8 +9,8 @@ function calculate() {
     const b = toTwoPlaces(document.getElementById("b").value);
     const z = toTwoPlaces(document.getElementById("z").value);
 
-    const x = toTwoPlaces((a / (a + b)));
-    const y = toTwoPlaces((b / (a + b)));
+    const x = (a / (a + b));
+    const y = (b / (a + b));
 
     const yourExpenses = toTwoPlaces((x * z));
     const partnerExpenses = toTwoPlaces((y * z));
