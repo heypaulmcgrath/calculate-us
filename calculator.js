@@ -15,7 +15,7 @@ function calculate() {
     const yourExpenses = toTwoPlaces((x * z));
     const partnerExpenses = toTwoPlaces((y * z));
 
-    document.getElementById("result").style.visibility = "visible";
+    document.getElementById("result").style.display = "";
     document.getElementById("you").innerHTML = "Your share: " + yourExpenses;
     document.getElementById("yourPartner").innerHTML = "Your partner's share: " + partnerExpenses;
     document.getElementById("calculate-button").value = "recalculate";
