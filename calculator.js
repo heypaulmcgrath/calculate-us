@@ -18,4 +18,6 @@ function calculate() {
     document.getElementById("result").style.visibility = "visible";
     document.getElementById("you").innerHTML = "Your share: " + yourExpenses;
     document.getElementById("yourPartner").innerHTML = "Your partner's share: " + partnerExpenses;
+    document.getElementById("calculate-button").value = "recalculate";
+
 }
