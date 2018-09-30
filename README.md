@@ -12,7 +12,7 @@ Formulas are as follows, and based on yearly gross (pre-tax) income:
 `(b / (a + b))` = your partner's contribution to household income per year as a percentage.
 
 `(x * z)` = your share of the monthly expenses.  
-`(z * z)` = your partner's share of the monthly expenses.
+`(y * z)` = your partner's share of the monthly expenses.
 
 Where:  
 
