@@ -11,49 +11,52 @@
 
 <body>
 
-<main class="mt3 fl ph3 w-100 sans-serif black-70">
+    <main class="mt3 fl ph3 w-100 sans-serif black-70">
 
-    <section class="sans-serif fw6 tc lh-title mb4">
-        <h1 class="f1 f1-m f1-l black-70">💸</h1>
-        <h1 style="margin-top:-1.4rem;" class="f2 f2-m f2-l black-70">Joint Expenses Calculator</h1>
-    </section>
+        <section class="sans-serif fw6 tc lh-title mb4">
+            <h1 class="f1 f1-m f1-l black-70">💸</h1>
+            <h1 style="margin-top:-1.4rem;" class="f2 f2-m f2-l black-70">Joint Expenses Calculator</h1>
+        </section>
 
-    <form class="measure center mb5">
-        <fieldset id="calculator" class="ba b--transparent ph0 mh0">
-            <div class="mt3">
-                <label class="db lh-copy f6 mb1 fw6 ttu tracked" for="your-income">Your yearly pre-tax income.</label>
-                <input class="pa2 input-reset ba bw1 b--black-70 br2 bg-transparent w-100" type="text" name="your-income"
+        <form class="measure center mb5">
+            <fieldset id="calculator" class="ba b--transparent ph0 mh0">
+                <div class="mt3">
+                    <label class="db lh-copy f6 mb1 fw6 ttu tracked" for="your-income">Your yearly pre-tax income.</label>
+                    <input class="pa2 input-reset ba bw1 b--black-70 br2 bg-transparent w-100" type="text" name="your-income"
                         id="a">
-            </div>
-            <div class="mv3">
-                <label class="db fw6 lh-copy f6 mb1 fw6 ttu tracked" for="partner-income">Your partner's yearly pre-tax income.</label>
-                <input class="pa2 input-reset ba bw1 b--black-70 br2 bg-transparent w-100" type="text" name="partner-income"
+                </div>
+                <div class="mv3">
+                    <label class="db fw6 lh-copy f6 mb1 fw6 ttu tracked" for="partner-income">Your partner's yearly
+                        pre-tax income.</label>
+                    <input class="pa2 input-reset ba bw1 b--black-70 br2 bg-transparent w-100" type="text" name="partner-income"
                         id="b">
-            </div>
-            <div class="mv3">
-                <label class="db fw6 lh-copy f6 mb1 fw6 ttu tracked" for="expenses">This month's total household expenses.</label>
-                <input class="pa2 input-reset ba bw1 b--black-70 br2 bg-transparent w-100" type="text" name="expenses"
+                </div>
+                <div class="mv3">
+                    <label class="db fw6 lh-copy f6 mb1 fw6 ttu tracked" for="expenses">This month's total household
+                        expenses.</label>
+                    <input class="pa2 input-reset ba bw1 b--black-70 br2 bg-transparent w-100" type="text" name="expenses"
                         id="z">
-            </div>
+                </div>
             </fieldset>
-            <input id="calculate-button" class="link dim button-reset black-70 b--black-70 ph4 pv2 ba bw1 br2 bg-transparent pointer f6 fw4 ttu tracked dib mt3" type="button" onClick="calculate()" value="calculate">
-    </form>
+            <input id="calculate-button" class="link dim button-reset black-70 b--black-70 ph4 pv2 ba bw1 br2 bg-transparent pointer f6 fw4 ttu tracked dib mt3"
+                type="button" onClick="calculate()" value="calculate">
+        </form>
 
-    <section id="result" style="display: none" class="measure center bg-white br3 pa3 pa4-ns mt3 mb5 ba b--black-10">
+        <section id="result" style="display: none" class="measure center bg-white br3 pa3 pa4-ns mt3 mb5 ba b--black-10">
 
-        <div class="tc mb4">
-            <h1 style="font-size: 3.5rem; margin: 0;">🎊</h1>
-            <h1 class="f4">This Month's Split</h1>
-            <hr class="mw3 bb bw1 b--black-10">
-        </div>
+            <div class="tc mb4">
+                <h1 style="font-size: 3.5rem; margin: 0;">🎊</h1>
+                <h1 class="f4">This Month's Split</h1>
+                <hr class="mw3 bb bw1 b--black-10">
+            </div>
 
-        <h1 id="you" class="lh-copy tc measure center f4 black-70"></h1>
+            <h1 id="you" class="lh-copy tc measure center f4 black-70"></h1>
 
-        <h1 id="yourPartner" class="lh-copy tc  measure center f4 black-70"></h1>
+            <h1 id="yourPartner" class="lh-copy tc  measure center f4 black-70"></h1>
 
-    </section>
-    
-</main>
+        </section>
+
+    </main>
 
 </body>
 
