@@ -5,7 +5,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Joint Expenses Calculator</title>
+
     <link rel="stylesheet" type="text/css" href="tachyons.min.css">
+
+
+    <style>
+        .collapsed {
+            transform: scaleY(0);
+            transform-origin: 0 0;
+            transition: transform .3s ease-out;
+        }
+
+        .expanded {
+            transform: scaleY(1);
+        }
+    </style>
+
     <script type="text/javascript" src="calculator.js"></script>
 </head>
 
@@ -22,27 +37,23 @@
             <fieldset id="calculator" class="ba b--transparent ph0 mh0">
                 <div class="mt3">
                     <label class="db lh-copy f6 mb1 fw6 ttu tracked" for="your-income">Your yearly pre-tax income.</label>
-                    <input class="pa2 input-reset ba bw1 b--black-70 br2 bg-transparent w-100" type="text" name="your-income"
-                        id="a">
+                    <input class="pa2 input-reset ba bw1 b--black-70 br2 bg-transparent w-100" type="number" name="your-income" id="a">
                 </div>
                 <div class="mv3">
-                    <label class="db fw6 lh-copy f6 mb1 fw6 ttu tracked" for="partner-income">Your partner's yearly
-                        pre-tax income.</label>
-                    <input class="pa2 input-reset ba bw1 b--black-70 br2 bg-transparent w-100" type="text" name="partner-income"
-                        id="b">
+                    <label class="db fw6 lh-copy f6 mb1 fw6 ttu tracked" for="partner-income">Your partner's yearly pre-tax income.</label>
+                    <input class="pa2 input-reset ba bw1 b--black-70 br2 bg-transparent w-100" type="number" name="partner-income" id="b">
                 </div>
                 <div class="mv3">
-                    <label class="db fw6 lh-copy f6 mb1 fw6 ttu tracked" for="expenses">This month's total household
-                        expenses.</label>
-                    <input class="pa2 input-reset ba bw1 b--black-70 br2 bg-transparent w-100" type="text" name="expenses"
-                        id="z">
+                    <label class="db fw6 lh-copy f6 mb1 fw6 ttu tracked" for="expenses">This month's total household expenses.
+                    </label>
+                    <input class="pa2 input-reset ba bw1 b--black-70 br2 bg-transparent w-100" type="number" name="expenses" id="z">
                 </div>
             </fieldset>
             <input id="calculate-button" class="link dim button-reset black-70 b--black-70 ph4 pv2 ba bw1 br2 bg-transparent pointer f6 fw4 ttu tracked dib mt3"
                 type="button" onClick="calculate()" value="calculate">
         </form>
 
-        <section id="result" style="display: none" class="measure center bg-white br3 pa3 pa4-ns mt3 mb5 ba b--black-10">
+        <section id="result" class="collapsed measure center bg-white br3 pa3 pa4-ns mt3 mb5 ba b--black-10">
 
             <div class="tc mb4">
                 <h1 style="font-size: 3.5rem; margin: 0;">🎊</h1>

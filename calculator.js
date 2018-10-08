@@ -1,7 +1,7 @@
 "use strict";
 
 const toTwoPlaces = (x) => {
-    return Math.round( x * 1e2 ) / 1e2;
+    return Math.round(x * 1e2) / 1e2;
 }
 
 function calculate() {
@@ -15,7 +15,7 @@ function calculate() {
     const yourExpenses = toTwoPlaces((x * z));
     const partnerExpenses = toTwoPlaces((y * z));
 
-    document.getElementById("result").style.display = "";
+    document.getElementById("result").classList.add('expanded');
     document.getElementById("you").innerHTML = "Your share: " + yourExpenses;
     document.getElementById("yourPartner").innerHTML = "Your partner's share: " + partnerExpenses;
     document.getElementById("calculate-button").value = "recalculate";
