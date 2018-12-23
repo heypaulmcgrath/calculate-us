@@ -37,16 +37,16 @@
             <fieldset id="calculator" class="ba b--transparent ph0 mh0">
                 <div class="mt3">
                     <label class="db lh-copy f6 mb1 fw6 ttu tracked" for="your-income">Your yearly pre-tax income.</label>
-                    <input class="pa2 input-reset ba bw1 b--black-70 br2 bg-transparent w-100" type="number" name="your-income" id="a">
+                    <input class="pa2 input-reset ba bw1 b--black-70 br2 bg-transparent w-100" type="number" step="0.01" min=0 name="your-income" id="a">
                 </div>
                 <div class="mv3">
                     <label class="db fw6 lh-copy f6 mb1 fw6 ttu tracked" for="partner-income">Your partner's yearly pre-tax income.</label>
-                    <input class="pa2 input-reset ba bw1 b--black-70 br2 bg-transparent w-100" type="number" name="partner-income" id="b">
+                    <input class="pa2 input-reset ba bw1 b--black-70 br2 bg-transparent w-100" type="number" step="0.01" min=0 name="partner-income" id="b">
                 </div>
                 <div class="mv3">
                     <label class="db fw6 lh-copy f6 mb1 fw6 ttu tracked" for="expenses">This month's total household expenses.
                     </label>
-                    <input class="pa2 input-reset ba bw1 b--black-70 br2 bg-transparent w-100" type="number" name="expenses" id="z">
+                    <input class="pa2 input-reset ba bw1 b--black-70 br2 bg-transparent w-100" type="number" step="0.01" min=0 name="expenses" id="z">
                 </div>
             </fieldset>
             <input id="calculate-button" class="link dim button-reset black-70 b--black-70 ph4 pv2 ba bw1 br2 bg-transparent pointer f6 fw4 ttu tracked dib mt3"
