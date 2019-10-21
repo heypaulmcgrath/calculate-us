@@ -21,7 +21,9 @@ function calculate() {
 
   if (!a || !b || !z) {
     document.getElementById('error-msg').style.visibility = 'visible';
-  } else {
+    return;
+  } 
+
     document.getElementById('error-msg').style.visibility = 'hidden';
 
     const x = a / (a + b);
@@ -35,5 +37,5 @@ function calculate() {
     document.getElementById('yourPartner').innerHTML =
       "Your partner's share: " + partnerExpenses;
     document.getElementById('calculate-button').value = 'recalculate';
-  }
+  
 }
