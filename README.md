@@ -1,4 +1,4 @@
-# joint-expenses-calculator
+# calculate-us
 
 #### This is an incredibly basic MVP implementation. Don't expect anything fancy.
 
@@ -16,8 +16,8 @@ Formulas are as follows, and based on yearly gross (pre-tax) income:
 
 Where:  
 
-a = your yearly gross salary.  
-b = your partner's yearly gross salary. 
+a = your yearly net salary.  
+b = your partner's yearly net salary. 
 
 x = Your percentage of household income.  
 y = Your partners percentage of household income.  
