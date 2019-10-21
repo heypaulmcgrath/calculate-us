@@ -11,7 +11,7 @@ function clearForm() {
 
   document.getElementById('result').classList.remove('expanded');
   document.getElementById('error-msg').style.visibility = 'hidden';
-  document.getElementById('calculate-button').value = 'Caculate';
+  document.getElementById('calculate-button').value = 'calculate';
 }
 
 function calculate() {
